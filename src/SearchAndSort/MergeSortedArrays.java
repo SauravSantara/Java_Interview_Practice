@@ -1,4 +1,5 @@
 // Problem: Given two sorted arrays, write a Java program to merge them into a single sorted array.
+package SearchAndSort;
 
 import java.util.Arrays;
 
