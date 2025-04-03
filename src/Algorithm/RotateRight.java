@@ -19,7 +19,7 @@ public class RotateRight {
     }
     public static void rotateRight(int[] nums, int k) {
         int len = nums.length;
-        // Handle if k>nums.length
+        // TODO Handle if k>nums.length
         reverse (nums, 0, len-1); // Reverse the entire array
         reverse (nums, 0, k-1); // Reverse the first k elements
         reverse (nums, k, len-1); // Reverse the rest of the elements
@@ -27,10 +27,23 @@ public class RotateRight {
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,5,6,7};
         int k = 3;
-        rotate(nums, k); // does not modify the original array
-        rotateRight(nums, k);
-        System.out.println(Arrays.toString(nums));
+        // rotate(nums, k); // does not modify the original array
+        
+        // OR
+        /* rotateRight(nums, k);
+        System.out.println(Arrays.toString(nums)); */
+        
+        // OR
+        int arrLen = nums.length;
+        int sub = arrLen - k;
 
+        for (int i = sub; i < arrLen; i++) {
+            System.err.print(nums[i] + ",");
+        }
+
+        for (int j = 0; j < sub; j++) {
+            System.err.print(nums[j] + ",");
+        }
     }
 
     // another way
