@@ -2,6 +2,7 @@
 // Example:
 // Input: Array = [1, 2, 3, 4, 5], Target = 3
 // Output: 2
+package SearchAndSort;
 
 import java.util.Arrays;
 
