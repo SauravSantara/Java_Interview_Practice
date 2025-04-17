@@ -1,5 +1,6 @@
 package Collections;
 
+import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,5 +17,8 @@ public class ReverseTreeMap {
         for (Map.Entry<Integer, String> entry : treeMap.descendingMap().entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
+
+        // OR
+        treeMap.values().stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
     }
 }

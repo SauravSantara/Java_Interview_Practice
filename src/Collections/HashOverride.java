@@ -39,7 +39,7 @@ public class HashOverride {
         empMap.put(e2, "CFE");
 
         System.out.println("e1 = " + empMap.get(e1));
-        System.out.println("e1 = " + empMap.get(e2));
+        System.out.println("e2 = " + empMap.get(e2));
         System.out.println("equals = " + empMap.get(e1).equals(empMap.get(e2)));
         System.out.println("hashCode = " + empMap.get(e1).hashCode() + " " + empMap.get(e2).hashCode());
         System.out.println("size = " + empMap.size());
