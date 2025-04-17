@@ -13,6 +13,7 @@ empList.add(new Employee(4, "def", "F", “IT”, 400000));
  */
 package StreamAPI;
 
+import Root.Employee;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -32,25 +33,4 @@ public class ListToMap {
 
         System.out.println(genderMap);
     }
-}
-
-class Employee {
-    private Integer id;
-    private String name;
-    private String gender;
-    private String department;
-    private Integer salary;
-
-    public Employee(Integer id, String name, String gender, String department, Integer salary) {
-            this.id = id;
-            this.name = name;
-            this.gender = gender;
-            this.department = department;
-            this.salary = salary;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
 }
