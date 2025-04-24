@@ -15,14 +15,27 @@ public class Employee {
             this.salary = salary;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public String getGender() {
         return gender;
+    }
+
+    public String getDepartment() {
+        return department;
     }
 
     public double getSalary() {
         return salary;
     }
 
+    @Override
     public String toString() {
         return "ID: " + id + ", Name: " + name + ", Gender: " + gender + ", Department: " + department + ", Salary: " + salary;
     }
